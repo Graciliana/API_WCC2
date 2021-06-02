@@ -10,6 +10,9 @@ module.export = app => {
     app.post('/agendar', (req,resp) => {
         //verificar o que está sendo recebido
         const agendamento = req.body;
-        console.log(agendamento)
+
+        //Passar o rsp, para já retornar nosso resultado
+        Agendamento.inserir(agendamento, resp);
+       // console.log(agendamento)
     })
 };
