@@ -1,4 +1,5 @@
-const express = require('express');
+//const express = require('express');
+const configExpress =  require('./config/configExpress');
 
 //Criando a nossa aplicação
 const app = express();
